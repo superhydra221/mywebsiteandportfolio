@@ -1,0 +1,454 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #faf8f3;
+  color: #202020;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: #202020;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 8%;
+  border-bottom: 1px solid #ded8cc;
+}
+
+nav .myNameBox a {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav .menuStuff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: flex-end;
+}
+
+nav .menuStuff a {
+  color: #5f5f5f;
+  font-size: 15px;
+}
+
+nav .menuStuff a:hover {
+  color: #2f6f63;
+}
+
+main {
+  width: 90%;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+
+.heroArea1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+  padding: 75px 0;
+}
+
+.introWords {
+  flex: 1;
+}
+
+.miniTitle {
+  margin: 0 0 12px;
+  color: #2f6f63;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.15;
+}
+
+.heroArea1 p,
+.smallIntroText,
+.aboutWordsBox p,
+.workOneBox p,
+.contactWords p {
+  color: #5f5f5f;
+}
+
+.heroArea1 .introWords p {
+  max-width: 620px;
+  margin-top: 22px;
+  font-size: 17px;
+}
+
+.heroArea1 .introWords .miniTitle {
+  margin-top: 0;
+}
+
+.clickBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.clickBtns a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  background-color: #2f6f63;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.clickBtns a:hover {
+  background-color: #25594f;
+}
+
+.profilePicBox {
+  width: 330px;
+  flex-shrink: 0;
+}
+
+.profilePicBox img {
+  display: block;
+  width: 100%;
+  border: 1px solid #ded8cc;
+  border-radius: 10px;
+}
+
+
+.bigPageBox {
+  padding: 64px 0 82px;
+}
+
+.smallIntroText {
+  max-width: 680px;
+  margin: 18px 0 34px;
+  font-size: 17px;
+}
+
+
+.aboutGridThing {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 42px;
+  margin-top: 34px;
+}
+
+.photoSide img {
+  display: block;
+  width: 100%;
+  border: 1px solid #ded8cc;
+  border-radius: 10px;
+}
+
+.aboutWordsBox h2 {
+  margin: 34px 0 10px;
+  font-size: 26px;
+}
+
+.aboutWordsBox h3 {
+  margin: 24px 0 6px;
+  color: #2f6f63;
+  font-size: 18px;
+}
+
+.normalListItems {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: #5f5f5f;
+}
+
+.normalListItems li {
+  margin-bottom: 8px;
+}
+
+
+.storyTimeBox{
+ padding-top:10px;
+}
+
+.myBizLine{
+ position:relative;
+   display:grid;
+ gap:24px;
+    margin-top:36px;
+ padding-left:28px;
+}
+
+.myBizLine::before{
+ content:"";
+ position:absolute;
+    top:10px;
+ bottom:10px;
+ left:7px;
+    width:2px;
+ background-color:#ded8cc;
+}
+
+.timeBlockOne{
+  position:relative;
+}
+
+.smallRoundPoint{
+ position:absolute;
+   top:20px;
+ left:-28px;
+   width:16px;
+ height:16px;
+ border:3px solid #faf8f3;
+ border-radius:50%;
+   background-color:#2f6f63;
+}
+
+.timeTextCard{
+ padding:22px;
+  background-color:white;
+     border:1px solid #ded8cc;
+ border-radius:8px;
+}
+
+.timeTextCard span{
+ display:inline-block;
+ margin-bottom:8px;
+   color:#2f6f63;
+ font-size:14px;
+ font-weight:600;
+}
+
+.timeTextCard h2{
+  margin:0 0 8px;
+ font-size:22px;
+}
+
+.timeTextCard p{
+ max-width:720px;
+   margin:0;
+ color:#5f5f5f;
+}
+
+
+.workWrapBox {
+  display: grid;
+  gap: 26px;
+}
+
+.workOneBox {
+  padding-bottom: 26px;
+  border-bottom: 1px solid #ded8cc;
+}
+
+.workIconCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 10px;
+  background-color: #e4f0ec;
+  color: #2f6f63;
+  border-radius: 50%;
+}
+
+.workOneBox h2 {
+  margin: 0 0 8px;
+  font-size: 23px;
+}
+
+.workOneBox p {
+  max-width: 720px;
+  margin: 0 0 14px;
+}
+
+.workOneBox a {
+  display: inline-block;
+  padding: 9px 14px;
+  background-color: #2f6f63;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.workOneBox a:hover {
+  background-color: #25594f;
+}
+
+
+.skillBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.skillOne {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 12px;
+  background-color: white;
+  border: 1px solid #ded8cc;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.skillOne img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+
+.contactGridBox {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 42px;
+  margin-top: 34px;
+}
+
+.contactWords {
+  padding-top: 4px;
+}
+
+.contactBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.contactBtns a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 16px;
+  background-color: #2f6f63;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.contactBtns a:hover {
+  background-color: #25594f;
+}
+
+form {
+  display: grid;
+  gap: 11px;
+}
+
+label {
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: #202020;
+  border: 1px solid #ded8cc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #e4f0ec;
+  border-color: #2f6f63;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: fit-content;
+  margin-top: 6px;
+  padding: 11px 16px;
+  background-color: #2f6f63;
+  color: white;
+  border: 1px solid #2f6f63;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #25594f;
+}
+
+
+@media (max-width: 800px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav .menuStuff {
+    justify-content: flex-start;
+  }
+
+  .heroArea1 {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    padding: 48px 0 60px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .profilePicBox {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .aboutGridThing,
+  .contactGridBox {
+    grid-template-columns: 1fr;
+  }
+
+  .myBizLine{
+    padding-left:24px;
+  }
+}
+
+@media (max-width: 520px) {
+  nav {
+    padding: 18px 5%;
+  }
+
+  nav .menuStuff {
+    gap: 12px;
+  }
+
+  .clickBtns,
+  .clickBtns a,
+  .contactBtns,
+  .contactBtns a,
+  button {
+    width: 100%;
+  }
+}
